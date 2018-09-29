@@ -4,11 +4,10 @@
  * second, there are nested conditionals with confusing flags
  * third, you can tell its just a brain dump from pseudocode
  */
-
 public static String testableHtml(PageData pageData, boolean includeSuiteSetup) throws Exception {
 	WikiPage wikiPage = pageData.getWikiPage();
 	StringBuffer buffer = new StringBuffer();
-	if (pageData.hasAttribute("Test')) {
+	if (pageData.hasAttribute("Test")) {
 		if (includeSuiteSetup) {
 			WikiPage suiteSetup = PageCrawlerImpl.getInheretedPage(SuiteResponder.SUITE_SETUP_NAME, wikiPage);
 			if (suiteSetup != null) {
@@ -22,14 +21,16 @@ public static String testableHtml(PageData pageData, boolean includeSuiteSetup) 
 			WikiPagePath setupPath = wikiPage.getPageCrawler().getFullPath(setup);
 			String setupPathName = PathParser.render(setupPath);
 			buffer.append("!include -setup .").append(setupPathName).append("\n");
-		}
-	}
+        }
+    }
+}
 
-	/* etc etc */
+	// etc etc flowing if statements
 
 
 /* better code, but only a polished turd 
- * this can be further improved by removing the test page setup code*/
+ * this can be further improved by removing the test page setup code
+ * */
 public static String renderPageWithSetupsAndTeardowns(PageData pageData, boolean isSuite) throws Exception {
 	boolean isTestPage = pageData.hasAttribute("Test");
 	if (isTestPage) {
