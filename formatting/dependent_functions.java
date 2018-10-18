@@ -1,3 +1,8 @@
+/* NOTE this does not apply to C where you MUST define or at least declare
+ * a function above the function calling it. (which is dumb)
+ */
+
+
 /* if one function calls another, those functions should be physically close
  * topmost function calls functions defined below it in a class
  *
