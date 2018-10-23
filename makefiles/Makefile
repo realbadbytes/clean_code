@@ -29,4 +29,4 @@ tip.o: tip.c gd.h
 	clang -c tip.c
 
 clean:
-	rm *.o tip geom
+	rm -f *.o tip geom
