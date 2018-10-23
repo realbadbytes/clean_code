@@ -4,4 +4,4 @@ A repository documenting shit code and ways to make it less shit. Writing clean 
 ## Why
 I am tired of writing, reading, and/or working on shit code.
 ## Who
-Me and you.
+Programmers all over the world.
