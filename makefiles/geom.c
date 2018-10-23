@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-double get_double(char *prompt, double min, double max);
+#include "gd.h"
+
+// double get_double(char *prompt, double min, double max);
 
 int main()
 {

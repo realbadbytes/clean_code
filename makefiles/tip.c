@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /* function prototype, this is defined in another object file that will be linked in later */
-double get_double(char *prompt, double min, double max);
+/* dont need this declaration if we include gd.h */
+// double get_double(char *prompt, double min, double max);
+#include "gd.h"
 
 int main()
 {
