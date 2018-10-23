@@ -1,0 +1,24 @@
+https://www.youtube.com/watch?v=GExnnTaBELk
+file.c --> preprocessor
+preprocesser handles #include and #define directives, strips out comments
+result is "processed C file" that has contents of includes copy-pasted inside
+in this example, stdio.h and math.h are inside preprocessor output file 
+output --> compiler --> file.s
+compiler translates C to asm
+file.s -> assembler -> file.o
+translate asm to object file
+object file is compiled file that is targeted for specific cpu and OS. not an executable yet
+file.o --> linker --> executable file
+linker brings together object files and creates ELF
+
+clang or gcc has options to invoke just single steps
+preprocessor only -E
+up through compiler -S
+up through assembler -c
+
+
+
+
+
+
+
