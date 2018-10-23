@@ -4,6 +4,9 @@
 # Each chunk is a recipe
 # Each recipe has a target, dependencies, and commands
 # MUST USE A TAB CHARACTER BEFORE THE ACTION (sounds like Make has shit code somewhere)
+# the shit code gives you an error if spaces are encountered vs tab:
+# Makefile:xx: *** missing separator. Stop.
+# really?
 #
 #target: dependencies
 #	action
