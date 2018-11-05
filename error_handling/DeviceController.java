@@ -28,7 +28,7 @@ public class DeviceController {
              
 
 /* less shit version */
-/* getHandle() throws exception. Cller tryToShutDown() doesn't have to worry about error handling */
+/* getHandle() throws exception. Caller tryToShutDown() doesn't have to worry about error handling */
 
 public class DeviceController {
     public void sendShutDown() {
