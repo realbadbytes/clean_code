@@ -1,3 +1,5 @@
+/* I don't agree with this */
+
 /*
  * Old error handling techniques involved setting error flags or returning error codes to caller.
  * Why shit? caller must check for errors on return. 
