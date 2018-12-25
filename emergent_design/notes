@@ -1,0 +1,25 @@
+4 rules:
+
+Runs all the tests
+	Systems that aren't testable aren't verifiable. These should not be deployed.
+	Testable classes are by design, small and modular. This requirement helps class design.
+	Code that be can tested enables refactoring
+
+No duplication
+	int size()
+	boolean is_empty()
+	These two are functionally the same.
+
+Expresses the programmer intent
+	"Most of us have had the experience of working on convoluted code. Many of us have
+	produced some convoluted code ourselves. It's easy to write code that we understand,
+	because at the time we write it we're deep in an understanding of the problem we're
+	trying to solve. 
+	* it doesn't have to be perfect, just try to be expressive *
+	Use class names that contain their design pattern name.
+	Classes should indicate their purpose.
+
+Minimizes classes and methods
+	Don't make things absurdly small. Use a pinch of salt, not a handful.
+	Designing and developing good code is like cooking.
+
